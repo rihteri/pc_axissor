@@ -31,9 +31,10 @@
 
 (defn parse-data [data]
   (doall (->> data
-              (map #(string/replace % #"\; ?$" ""))
+              (map #(string/replace % #"\s?\;\s?$" ""))
               (map #(string/split % #" "))
               (apply concat)
+              (filter #(not (empty? %)))
               (map rv/read-value))))
 
 (defn parse [lines]

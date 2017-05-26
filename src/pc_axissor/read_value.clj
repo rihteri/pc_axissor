@@ -9,4 +9,6 @@
     "\".....\""  :reserved
     "\"......\"" :empty
     "\"-\""      :none
-    (BigDecimal. value)))
+    (try (BigDecimal. value)
+         (catch java.lang.NumberFormatException e
+             nil))))
