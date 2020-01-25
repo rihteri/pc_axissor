@@ -11,11 +11,11 @@ This is a library for reading PC-Axis files, as available from e.g. [stat.fi](ht
 ## TODO
 * Only default language is imported
 * Things are not grouped nicely
-* Most likely doesn't work at all
 
 ## License
 
 Copyright © 2017 Vincit 
+Copyright © 2020 Riku Keski-Keturi
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
